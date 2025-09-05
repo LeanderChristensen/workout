@@ -1,0 +1,24 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    background-color: #313131;
+}
+
+#flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+#pad-left {
+    width: 100%;
+}
+
+#pad-right {
+    width: 100%;
+}
