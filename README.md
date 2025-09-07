@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# Workout App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Framework7 CLI Options
 
-Currently, two official plugins are available:
+Framework7 app created with following options:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
+```
+{
+  "cwd": "/Users/leander/Documents/projects/workout_new",
+  "type": [
+    "pwa",
+    "web"
+  ],
+  "name": "Workout App",
+  "framework": "react",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkMode": false,
+    "iconFonts": true
   },
-])
+  "customBuild": false
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+First of all we need to install dependencies, run in terminal
 ```
+npm install
+```
+
+## NPM Scripts
+
+* 🔥 `start` - run development server
+* 🔧 `dev` - run development server
+* 🔧 `build` - build web app for production
+
+## Vite
+
+There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
+
+## PWA
+
+This is a PWA. Don't forget to check what is inside of your `service-worker.js`. It is also recommended that you disable service worker (or enable "Update on reload") in browser dev tools during development.
+## Assets
+
+Assets (icons, splash screens) source images located in `assets-src` folder. To generate your own icons and splash screen images, you will need to replace all assets in this directory with your own images (pay attention to image size and format), and run the following command in the project directory:
+
+```
+framework7 assets
+```
+
+Or launch UI where you will be able to change icons and splash screens:
+
+```
+framework7 assets --ui
+```
+
+
+
+## Documentation & Resources
+
+* [Framework7 Core Documentation](https://framework7.io/docs/)
+
+* [Framework7 React Documentation](https://framework7.io/react/)
+
+* [Framework7 Icons Reference](https://framework7.io/icons/)
+* [Community Forum](https://forum.framework7.io)
+
+## Support Framework7
+
+Love Framework7? Support project by donating or pledging on:
+- Patreon: https://patreon.com/framework7
+- OpenCollective: https://opencollective.com/framework7
