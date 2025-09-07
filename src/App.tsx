@@ -1,13 +1,13 @@
 import "./App.css";
+import Workout from "./Workout.tsx";
 
 function App() {
-    const test = "testt";
     return (
         <>
             <div id="flex-container">
                 <div id="pad-left"></div>
                 <div id="main">
-                    <h1>Hello world! {test}</h1>
+                    <Workout />
                 </div>
                 <div id="pad-right"></div>
             </div>
