@@ -1,0 +1,141 @@
+{
+  "workouts": [
+    {
+      "name": "Legs 1",
+      "exercises": [
+        {
+          "name": "Squat",
+          "history": [
+            {
+              "week": 1,
+              "sets": [
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 6 }
+              ]
+            },
+            {
+              "week": 2,
+              "sets": [
+                { "weight": 105, "reps": 8 },
+                { "weight": 105, "reps": 7 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Romanian Deadlift",
+          "history": [
+            {
+              "week": 1,
+              "sets": [
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 6 }
+              ]
+            },
+            {
+              "week": 2,
+              "sets": [
+                { "weight": 105, "reps": 8 },
+                { "weight": 105, "reps": 7 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Leg Extension",
+          "history": [
+            {
+              "week": 1,
+              "sets": [
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 6 }
+              ]
+            },
+            {
+              "week": 2,
+              "sets": [
+                { "weight": 105, "reps": 8 },
+                { "weight": 105, "reps": 7 }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Leg Curls",
+          "history": [
+            {
+              "week": 1,
+              "sets": [
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 8 },
+                { "weight": 100, "reps": 6 }
+              ]
+            },
+            {
+              "week": 2,
+              "sets": [
+                { "weight": 105, "reps": 8 },
+                { "weight": 105, "reps": 7 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Push 1",
+      "exercises": [
+        { "name": "Bench Press", "history": [] },
+        { "name": "Machine Shoulder Press", "history": [] },
+        { "name": "Chest Dip", "history": [] },
+        { "name": "Eccentric Skull Crushers", "history": [] },
+        { "name": "Egyptian Lateral Raise", "history": [] },
+        { "name": "Cable Tricep Kickback", "history": [] }
+      ]
+    },
+    {
+      "name": "Pull 1",
+      "exercises": [
+        { "name": "Pull-Up", "history": [] },
+        { "name": "Seated Cable Row", "history": [] },
+        { "name": "Cable Pullover", "history": [] },
+        { "name": "Hammer Cheat Curl", "history": [] },
+        { "name": "Incline Dumbbell Curl", "history": [] },
+        { "name": "Dumbbell Shrug", "history": [] }
+      ]
+    },
+    {
+      "name": "Legs 2",
+      "exercises": [
+        { "name": "Deadlift", "history": [] },
+        { "name": "Leg Press", "history": [] },
+        { "name": "Hip Thrust", "history": [] },
+        { "name": "Leg Curls", "history": [] }
+      ]
+    },
+    {
+      "name": "Push 2",
+      "exercises": [
+        { "name": "Overhead Press", "history": [] },
+        { "name": "Close-Grip Bench Press", "history": [] },
+        { "name": "Cable Crossover", "history": [] },
+        { "name": "Overhead Tricep Ext", "history": [] },
+        { "name": "Lateral Raise 21’s", "history": [] }
+      ]
+    },
+    {
+      "name": "Pull 2",
+      "exercises": [
+        { "name": "Lat Pulldown", "history": [] },
+        { "name": "Chest Supported Row", "history": [] },
+        { "name": "Rope Facepull", "history": [] },
+        { "name": "Reverse Cable Fly", "history": [] },
+        { "name": "Pronated/Supinated Curl", "history": [] },
+        { "name": "Dumbbell Shrug", "history": [] }
+      ]
+    }
+  ]
+}

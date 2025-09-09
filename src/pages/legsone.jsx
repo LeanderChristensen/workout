@@ -1,34 +1,54 @@
-import React from 'react';
+import React from "react";
 import {
-  Page,
-  Navbar,
-  List,
-  ListInput,
-  ListItem,
-  Toggle,
-  BlockTitle,
-  Button,
-  Range,
-  Block,
-} from 'framework7-react';
+    Page,
+    Navbar,
+    List,
+    ListInput,
+    ListItem,
+    Toggle,
+    BlockTitle,
+    Button,
+    Range,
+    Block,
+} from "framework7-react";
+import exercises from "../exercises.json";
+
+// console.log(exercises.workouts[0].exercises[0].history[0].sets);
 
 const FormPage = () => (
-  <Page name="Legs 1">
-    <Navbar title="Legs 1" backLink="Back"></Navbar>
-
-    <BlockTitle>Bench Press</BlockTitle>
-    <List strongIos outlineIos dividersIos>
-      <ListInput label="Set 1 - Last week: 62.5kg x 6 reps" type="text" placeholder="Weight"></ListInput>
-      <ListInput label="Set 2 - Last week: 62.5kg x 6 reps" type="text" placeholder="Weight"></ListInput>
-      <ListInput label="Set 3 - Last week: 62.5kg x 6 reps" type="text" placeholder="Weight"></ListInput>
-    </List>
-    <BlockTitle>Machine Shoulder Press</BlockTitle>
-    <List strongIos outlineIos dividersIos>
-      <ListInput label="Set 1 - Last week: 20kg x 12 reps" type="text" placeholder="Weight"></ListInput>
-      <ListInput label="Set 2- Last week: 20kg x 12 reps" type="text" placeholder="Weight"></ListInput>
-      <ListInput label="Set 3 - Last week: 20kg x 12 reps" type="text" placeholder="Weight"></ListInput>
-    </List>
-  </Page>
+    <Page name={exercises.workouts[0].name}>
+        <Navbar title={exercises.workouts[0].name} backLink="Back"></Navbar>
+        {exercises.workouts[0].exercises.map((exercise, exerciseIndex) => (
+            <div key={exerciseIndex}>
+                {console.log(
+                    JSON.stringify(exercise.history[0].sets) +
+                        ", " +
+                        exerciseIndex
+                )}
+                <BlockTitle>{exercise.name}</BlockTitle>
+                <List strongIos outlineIos dividersIos>
+                    {exercise.history[0].sets.map((set, setIndex) => [
+                        <ListInput
+                            key={`w-${setIndex}`}
+                            label={`Set ${setIndex + 1} - Last week: ${
+                                set.weight
+                            }`}
+                            type="text"
+                            placeholder="Weight"
+                        />,
+                        <ListInput
+                            key={`r-${setIndex}`}
+                            label={`Set ${setIndex + 1} - Last week: ${
+                                set.reps
+                            } reps`}
+                            type="text"
+                            placeholder="Reps"
+                        />,
+                    ])}
+                </List>
+            </div>
+        ))}
+    </Page>
 );
 
 export default FormPage;
