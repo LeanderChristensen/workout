@@ -5,82 +5,34 @@
       "exercises": [
         {
           "name": "Squat",
-          "history": [
-            {
-              "week": 1,
-              "sets": [
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 6 }
-              ]
-            },
-            {
-              "week": 2,
-              "sets": [
-                { "weight": 105, "reps": 8 },
-                { "weight": 105, "reps": 7 }
-              ]
-            }
+          "sets": [
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 6 }
           ]
         },
         {
           "name": "Romanian Deadlift",
-          "history": [
-            {
-              "week": 1,
-              "sets": [
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 6 }
-              ]
-            },
-            {
-              "week": 2,
-              "sets": [
-                { "weight": 105, "reps": 8 },
-                { "weight": 105, "reps": 7 }
-              ]
-            }
+          "sets": [
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 6 }
           ]
         },
         {
           "name": "Leg Extension",
-          "history": [
-            {
-              "week": 1,
-              "sets": [
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 6 }
-              ]
-            },
-            {
-              "week": 2,
-              "sets": [
-                { "weight": 105, "reps": 8 },
-                { "weight": 105, "reps": 7 }
-              ]
-            }
+          "sets": [
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 6 }
           ]
         },
         {
           "name": "Leg Curls",
-          "history": [
-            {
-              "week": 1,
-              "sets": [
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 8 },
-                { "weight": 100, "reps": 6 }
-              ]
-            },
-            {
-              "week": 2,
-              "sets": [
-                { "weight": 105, "reps": 8 },
-                { "weight": 105, "reps": 7 }
-              ]
-            }
+          "sets": [
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 8 },
+            { "weight": 100, "reps": 6 }
           ]
         }
       ]

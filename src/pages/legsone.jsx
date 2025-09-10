@@ -21,18 +21,16 @@ const FormPage = () => (
         {exercises.workouts[0].exercises.map((exercise, exerciseIndex) => (
             <div key={exerciseIndex}>
                 {console.log(
-                    JSON.stringify(exercise.history[0].sets) +
-                        ", " +
-                        exerciseIndex
+                    JSON.stringify(exercise.sets) + ", " + exerciseIndex
                 )}
                 <BlockTitle>{exercise.name}</BlockTitle>
                 <List strongIos outlineIos dividersIos>
-                    {exercise.history[0].sets.map((set, setIndex) => [
+                    {exercise.sets.map((set, setIndex) => [
                         <ListInput
                             key={`w-${setIndex}`}
                             label={`Set ${setIndex + 1} - Last week: ${
                                 set.weight
-                            }`}
+                            }kg`}
                             type="text"
                             placeholder="Weight"
                         />,
